@@ -11,3 +11,14 @@ jobs:
         run: date
       - name: Show Operating System
         run: uname -a
+  second_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Python Version
+        run: python --version
+      - name: Check git Version
+        run: git --version
+      - name: Show current directory
+        run: pwd
+      - name: List files in current directory
+        run: ls -la
