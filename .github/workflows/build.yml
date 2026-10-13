@@ -27,7 +27,7 @@ jobs:
 
       - name: Verify Flask app starts
         run: |
-          python app.py &
+          python flask_app.py &
           APP_PID=$!
           sleep 3
           curl -f http://127.0.0.1:5000/
